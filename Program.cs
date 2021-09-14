@@ -35,12 +35,20 @@ namespace Project1
 		public static void GuestMode()
 		{
 			int option;
-		
+			int count = 0;
 			Console.WriteLine("You are in the guest mode now!");
+			
 			while (true)
 			{
-				Profile.Intro();
+				
 
+
+				if (count == 0)
+				{
+					Profile.Intro();
+					count++;
+				} 
+					
 
 				Console.WriteLine("Select an option: ");
 				Console.WriteLine("				1.Experience");
@@ -51,7 +59,7 @@ namespace Project1
 				Console.WriteLine("				6.Go back");
 				Console.Write("Enter your option : ");
 				option = int.Parse(Console.ReadLine());
-
+				Console.Clear();
 				if (BehindScenes.ProfileMode(option) == false) return;
 			}
 		}

@@ -9,11 +9,11 @@ namespace Project1
 
         public static void Intro()
         {
-            int count = 0;
+          /*  int count = 0;
             
 
             if (count > 0) return;
-            count++;
+            count++;*/
             //Console.WriteLine(count);
             Console.WriteLine("Hello, I'm Aashish. A computer Science student. ITS WORKING!!");
 
@@ -23,6 +23,8 @@ namespace Project1
         public static void Experience()
         {
             Console.WriteLine("You are here!");
+            Console.WriteLine("                                                        Press enter to go back!");
+            Console.ReadLine();
         }
     }
 }
