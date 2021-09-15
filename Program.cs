@@ -40,7 +40,6 @@ namespace Project1
 			
 			while (true)
 			{
-				
 
 
 				if (count == 0)

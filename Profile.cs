@@ -26,5 +26,31 @@ namespace Project1
             Console.WriteLine("                                                        Press enter to go back!");
             Console.ReadLine();
         }
+
+        public static void Education()
+        {
+            Console.WriteLine("You are here!");
+            Console.WriteLine("                                                        Press enter to go back!");
+            Console.ReadLine();
+        }
+        public static void Skills()
+        {
+            Console.WriteLine("You are here!");
+            Console.WriteLine("                                                        Press enter to go back!");
+            Console.ReadLine();
+        }
+        public static void Technological()
+        {
+            Console.WriteLine("You are here!");
+            Console.WriteLine("                                                        Press enter to go back!");
+            Console.ReadLine();
+        }
+        public static void ContactDetails()
+        {
+            Console.WriteLine("You are here!");
+            Console.WriteLine("                                                        Press enter to go back!");
+            Console.ReadLine();
+        }
+
     }
 }
