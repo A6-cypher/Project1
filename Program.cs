@@ -1,5 +1,7 @@
 ﻿using System;
-
+using System.IO;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 namespace Project1
 {
 	public enum CvSection { experience, education, skills, technologicalSkills, contactDetails}
@@ -51,14 +53,33 @@ namespace Project1
 				Console.Write("Choose your section : ");
 				option = Console.ReadLine();
 				Console.Clear();
-				if (BehindScenes.ProfileMode(option) == false) return;
+				if (BehindScenes.ProfileGuestMode(option) == false) return;
 			}
 		}
 
 		public static void AdminMode()
 		{
+			string option;
+			
+			Console.WriteLine("You are in the admin mode now!");
 
+			while (true)
+			{
+
+				Console.WriteLine("Select an option: ");
+				Console.WriteLine("				- Experience");
+				Console.WriteLine("				- Education/Training");
+				Console.WriteLine("				- Skills");
+				Console.WriteLine("				- Technological Skills");
+				Console.WriteLine("				- Contact Details");
+				Console.WriteLine("										Enter 'back' to exit guest mode");
+				Console.Write("Choose your section to update or delete: ");
+				option = Console.ReadLine();
+				Console.Clear();
+				BehindScenes.ProfileAdminMode(option);
+			}
 		}
+	
 
 	}
 
