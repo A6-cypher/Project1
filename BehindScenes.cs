@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Project1
 {
@@ -10,19 +8,36 @@ namespace Project1
         public static void MainMode(int option)
         {
             if (option == 1) Program.GuestMode();
+            if (option == 1) Program.GuestMode();
             Console.Clear();
         }
-        public static bool ProfileMode(int option)
-        {
-            if (option == 1) Profile.Experience();
-            if (option == 2) Profile.Education();
-            if (option == 3) Profile.Skills();
-            if (option == 4) Profile.Technological();
-            if (option == 5) Profile.ContactDetails();
-            if (option == 6) return false;
+        public static bool ProfileMode(string option)
+        {   
+            switch (option.ToLower())
+            {
 
+                case "experience":
+                    Profile.Experience();
+                    break;
+                case "education":
+                    Profile.Experience();
+                    break;
+                case "skills":
+                    Profile.Experience();
+                    break;
+                case "technological":
+                    Profile.Experience();
+                    break;
+                case "contact":
+                    Profile.Experience();
+                    break;
+                case "back":
+                    return false;
+                default:
+                    return true;
+
+            }            
             return true;
-
         }
     }
 }
